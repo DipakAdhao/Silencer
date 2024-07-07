@@ -1,0 +1,9 @@
+button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 9999; /* Ensure it's above the video */
+  }
+  

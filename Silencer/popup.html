@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Blocker Options</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 6px 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 8px 12px;
+      font-size: 14px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    button.deleteBtn {
+      margin-left: 5px;
+      padding: 4px 8px;
+      font-size: 12px;
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button.deleteBtn:hover {
+      background-color: #c82333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Word Blocker Options</h2>
+  <input type="text" id="newWord" placeholder="Type a word...">
+  <button id="addBtn">Add Word</button>
+  <label>
+    Case sensitive:
+    <input type="checkbox" id="caseSensitiveCheckbox">
+  </label>
+  <ul id="blockedWordsList"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
